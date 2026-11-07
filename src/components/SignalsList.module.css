@@ -1,0 +1,74 @@
+.empty {
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+  margin: 0;
+  padding: var(--sp-3);
+  border: 1px solid var(--line);
+  background-color: var(--paper);
+  border-radius: var(--radius);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.item {
+  padding: var(--sp-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background-color: var(--paper);
+}
+
+.topRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-1);
+}
+
+.label {
+  font-weight: 600;
+  font-size: var(--fs-s);
+  color: var(--ink);
+}
+
+.rightMeta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+}
+
+.weight {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+
+.ruleLink {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.fragmentRow {
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+  word-break: break-word;
+}
+
+.fragment {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink);
+  background-color: var(--surface);
+  padding: 1px var(--sp-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}

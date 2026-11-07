@@ -1,0 +1,27 @@
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.btn {
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-3);
+  background-color: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-size: var(--fs-s);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: var(--surface);
+}
+
+.btn:disabled {
+  color: var(--ink-3);
+  border-color: var(--line-strong);
+  cursor: not-allowed;
+}

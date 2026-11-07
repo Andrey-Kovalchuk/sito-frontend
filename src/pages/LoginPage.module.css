@@ -1,0 +1,156 @@
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-4);
+  background-color: var(--paper);
+}
+
+.card {
+  width: 100%;
+  max-width: 460px;
+  background-color: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.logoBlock {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.logoWord {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.logoBar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: var(--accent);
+  margin-top: 4px;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+}
+
+.testAccessBox {
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--sp-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.testAccessTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.testCredentials {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink);
+}
+
+.fillBtn {
+  align-self: flex-start;
+  min-height: 36px;
+  padding: var(--sp-1) var(--sp-3);
+  background-color: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.label {
+  font-weight: 600;
+  font-size: var(--fs-s);
+  color: var(--ink);
+}
+
+.input {
+  min-height: 44px;
+  background-color: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: var(--sp-2) var(--sp-3);
+  font-size: var(--fs-m);
+  color: var(--ink);
+}
+
+.inputInvalid {
+  border-color: var(--fake);
+}
+
+.fieldError {
+  margin: 2px 0 0 0;
+  font-size: var(--fs-s);
+  color: var(--fake);
+  font-weight: 600;
+}
+
+.authErrorBox {
+  padding: var(--sp-3);
+  background-color: var(--fake-bg);
+  border: 1px solid var(--fake);
+  border-radius: var(--radius);
+  font-size: var(--fs-s);
+  color: var(--fake);
+  font-weight: 600;
+}
+
+.submitBtn {
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-4);
+  background-color: var(--ink);
+  color: #ffffff;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  background-color: var(--line-strong);
+  border-color: var(--line-strong);
+  cursor: not-allowed;
+}

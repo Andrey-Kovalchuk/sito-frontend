@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.headerRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.valueText {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: var(--fs-s);
+  color: var(--ink);
+}
+
+.rangesHint {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
+}
+
+.trackGrid {
+  display: grid;
+  grid-template-columns: 30fr 35fr 35fr;
+  gap: var(--sp-1);
+  height: 10px;
+}
+
+.segment {
+  background-color: var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.fill {
+  height: 100%;
+  transition: width 150ms ease;
+}
+
+.fillSafe {
+  background-color: var(--safe);
+}
+
+.fillSuspicious {
+  background-color: var(--suspicious);
+}
+
+.fillFake {
+  background-color: var(--fake);
+}

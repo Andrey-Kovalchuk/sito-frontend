@@ -1,0 +1,47 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.topRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.title {
+  font-size: var(--fs-xl);
+  margin: 0 0 var(--sp-1) 0;
+}
+
+.countText {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+  margin: 0;
+}
+
+.topActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.seedBtn {
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-3);
+  background-color: transparent;
+  color: var(--ink-2);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: var(--fs-s);
+  cursor: pointer;
+}
+
+.seedBtn:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}

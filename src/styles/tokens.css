@@ -1,0 +1,45 @@
+:root {
+  /* поверхні */
+  --paper: #f4f2ec; /* фон сторінки, теплий папір */
+  --surface: #ffffff; /* поля, таблиці, панель результату */
+  --line: #d5d1c6; /* рамки, роздільники */
+  --line-strong: #a8a398;
+
+  /* текст */
+  --ink: #1c1b19; /* основний текст, основна кнопка */
+  --ink-2: #4a4843; /* вторинний текст */
+  --ink-3: #6e6a62; /* підказки, плейсхолдери (лише >= 14px) */
+
+  /* єдиний акцент — теракота; лише активний пункт меню, риска логотипу, виділення */
+  --accent: #9c4a1a;
+
+  /* вердикти: текст / фон */
+  --safe: #2f5d34;
+  --safe-bg: #e5ede1;
+  --suspicious: #7a5300;
+  --suspicious-bg: #f4ead2;
+  --fake: #9b2c20;
+  --fake-bg: #f5e0db;
+
+  /* фокус */
+  --focus: #1c1b19;
+
+  /* типографіка */
+  --font-sans: 'IBM Plex Sans', 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', Consolas, 'Courier New', monospace;
+  --fs-xs: 0.8125rem;
+  --fs-s: 0.9375rem;
+  --fs-m: 1rem;
+  --fs-l: clamp(1.1rem, 1.5vw, 1.25rem);
+  --fs-xl: clamp(1.3rem, 2.2vw, 1.625rem);
+
+  /* відступи */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+
+  --radius: 2px;
+}

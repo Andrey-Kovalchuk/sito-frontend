@@ -1,0 +1,29 @@
+.stamp {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: var(--fs-s);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--radius);
+  border: 2px solid var(--ink);
+}
+
+.safe {
+  color: var(--safe);
+  background-color: var(--safe-bg);
+  border-color: var(--safe);
+}
+
+.suspicious {
+  color: var(--suspicious);
+  background-color: var(--suspicious-bg);
+  border-color: var(--suspicious);
+}
+
+.fake {
+  color: var(--fake);
+  background-color: var(--fake-bg);
+  border-color: var(--fake);
+}

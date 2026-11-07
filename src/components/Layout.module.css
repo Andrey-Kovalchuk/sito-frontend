@@ -1,0 +1,121 @@
+.outerStage {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--paper);
+}
+
+.outerStage[data-preset='mobile'],
+.outerStage[data-preset='tablet'] {
+  background-color: #e4e0d5;
+}
+
+.viewportToolbar {
+  background-color: var(--ink);
+  color: #ffffff;
+  border-bottom: 1px solid var(--ink);
+  padding: 6px var(--sp-4);
+  font-size: var(--fs-xs);
+}
+
+.toolbarInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.toolbarStatus {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--paper);
+}
+
+.toolbarStatus strong {
+  color: #ffffff;
+}
+
+.toolbarBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+}
+
+.vpBtn {
+  min-height: 28px;
+  padding: 2px var(--sp-2);
+  background-color: transparent;
+  color: var(--paper);
+  border: 1px solid var(--ink-3);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.vpBtn:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.vpBtnActive {
+  background-color: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+  font-weight: 600;
+}
+
+.wrapper {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--paper);
+  container-type: inline-size;
+  container-name: app-layout;
+}
+
+.frameMobile {
+  max-width: 375px;
+  margin: var(--sp-3) auto;
+  border: 2px solid var(--ink);
+  min-height: calc(100vh - 64px);
+}
+
+.frameTablet {
+  max-width: 768px;
+  margin: var(--sp-3) auto;
+  border: 2px solid var(--ink);
+  min-height: calc(100vh - 64px);
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: var(--sp-4) var(--sp-3);
+}
+
+.wrapper[data-viewport='tablet'] .main,
+.wrapper[data-viewport='desktop'] .main {
+  padding: var(--sp-5) var(--sp-4);
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  background-color: var(--paper);
+  padding: var(--sp-3) var(--sp-4);
+}
+
+.footerInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}

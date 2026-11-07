@@ -1,0 +1,241 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.headerRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.title {
+  font-size: var(--fs-xl);
+  margin: 0 0 var(--sp-1) 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: var(--sp-2);
+}
+
+.sectionTitle {
+  font-size: var(--fs-l);
+  margin: 0;
+}
+
+.sectionLink {
+  font-size: var(--fs-s);
+  font-weight: 600;
+}
+
+.clearHighlightBtn {
+  min-height: 34px;
+  padding: var(--sp-1) var(--sp-3);
+  background-color: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.templatesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-3);
+}
+
+:global([data-viewport='tablet']) .templatesGrid,
+:global([data-viewport='desktop']) .templatesGrid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.templateCard {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.templateTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.templateCategory {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+  margin-bottom: 2px;
+}
+
+.templateTitle {
+  font-size: var(--fs-m);
+  margin: 0;
+}
+
+.templateMeta {
+  margin: 0;
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+
+.templateText {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+  padding: var(--sp-3);
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  word-break: break-word;
+}
+
+.templateActions {
+  margin-top: auto;
+  display: flex;
+}
+
+.loadBtn {
+  width: 100%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: var(--sp-2) var(--sp-3);
+  background-color: var(--ink);
+  color: #ffffff;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+:global([data-viewport='tablet']) .loadBtn,
+:global([data-viewport='desktop']) .loadBtn {
+  width: auto;
+}
+
+.loadBtn:hover {
+  text-decoration: none;
+}
+
+.rulesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.ruleCard {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.ruleCardHighlighted {
+  border: 2px solid var(--accent);
+}
+
+.ruleTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.ruleTitleRow {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.ruleTitle {
+  font-size: var(--fs-m);
+  margin: 0;
+}
+
+.ruleCode {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+
+.ruleWeight {
+  font-family: var(--font-mono);
+  font-size: var(--fs-s);
+  font-weight: 600;
+}
+
+.ruleDesc {
+  margin: 0;
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+}
+
+.triggersRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  padding-top: var(--sp-1);
+}
+
+.triggersLabel {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.triggerChip {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  padding: 2px var(--sp-2);
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.ruleFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--line);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}

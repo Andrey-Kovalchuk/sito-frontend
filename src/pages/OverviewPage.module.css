@@ -1,0 +1,337 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.headerRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.title {
+  font-size: var(--fs-xl);
+  margin: 0 0 var(--sp-1) 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-3);
+}
+
+:global([data-viewport='tablet']) .metricsGrid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+:global([data-viewport='desktop']) .metricsGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.metricCard {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.metricFake {
+  border-color: var(--fake);
+  background-color: var(--fake-bg);
+}
+
+.metricSuspicious {
+  border-color: var(--suspicious);
+  background-color: var(--suspicious-bg);
+}
+
+.metricSafe {
+  border-color: var(--safe);
+  background-color: var(--safe-bg);
+}
+
+.metricLabel {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+.metricValue {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.metricLink {
+  margin-top: var(--sp-1);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+}
+
+:global([data-viewport='desktop']) .twoCol {
+  grid-template-columns: 1fr 1fr;
+}
+
+.panel {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.panelHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--line);
+}
+
+.panelTitle {
+  font-size: var(--fs-l);
+  margin: 0;
+}
+
+.smallLink {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.emptyText {
+  margin: 0;
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+}
+
+.barList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.barItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  padding: var(--sp-3);
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.barTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.barName {
+  font-weight: 600;
+  font-size: var(--fs-s);
+}
+
+.barMeta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+
+.barTrack {
+  height: 8px;
+  background-color: var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background-color: var(--ink);
+}
+
+.barAction {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding-top: 2px;
+}
+
+.sendersList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.senderRow {
+  padding: var(--sp-3);
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.senderTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.senderHandle {
+  font-weight: 600;
+  font-size: var(--fs-s);
+}
+
+.senderBadge {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  padding: 1px var(--sp-2);
+  border: 1px solid var(--line-strong);
+  background-color: var(--surface);
+  border-radius: var(--radius);
+}
+
+.senderNote {
+  margin: 0;
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+
+.senderLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding-top: 2px;
+}
+
+/* Мобільні картки для матриці ознак (< 640px або режим смартфона) */
+.signalCardsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.signalCard {
+  padding: var(--sp-3);
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.signalCardTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.signalCardLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.tableWrap {
+  display: none;
+  overflow-x: auto;
+}
+
+:global([data-viewport='tablet']) .signalCardsList,
+:global([data-viewport='desktop']) .signalCardsList {
+  display: none;
+}
+
+:global([data-viewport='tablet']) .tableWrap,
+:global([data-viewport='desktop']) .tableWrap {
+  display: block;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: var(--sp-3);
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.table th {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-2);
+  background-color: var(--paper);
+}
+
+.sigName {
+  font-weight: 600;
+  font-size: var(--fs-s);
+  margin-bottom: 2px;
+}
+
+.sigDesc {
+  margin: 0;
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+
+.monoCell {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.rowLinks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}

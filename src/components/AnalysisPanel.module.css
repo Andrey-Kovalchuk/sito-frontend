@@ -1,0 +1,311 @@
+.panel {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--line);
+}
+
+.panelTitle {
+  font-size: var(--fs-l);
+  margin: 0;
+}
+
+.idleBox {
+  padding: var(--sp-4);
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.idleText {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: var(--fs-s);
+  line-height: 1.55;
+}
+
+.idleLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.invalidBox {
+  padding: var(--sp-4);
+  background-color: var(--fake-bg);
+  border: 1px solid var(--fake);
+  border-radius: var(--radius);
+}
+
+.statusHeading {
+  font-weight: 600;
+  font-size: var(--fs-m);
+  margin: 0 0 var(--sp-2) 0;
+}
+
+.errorList {
+  margin: 0;
+  padding-left: var(--sp-4);
+  font-size: var(--fs-s);
+  color: var(--fake);
+}
+
+.analyzingBox {
+  padding: var(--sp-4);
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.progressTrack {
+  width: 100%;
+  height: 4px;
+  background-color: var(--line);
+  overflow: hidden;
+}
+
+.progressFill {
+  width: 45%;
+  height: 100%;
+  background-color: var(--accent);
+}
+
+.resultBox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.verdictRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.manualTag {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+  padding: 2px var(--sp-2);
+  border: 1px solid var(--line-strong);
+  background-color: var(--paper);
+  border-radius: var(--radius);
+}
+
+.sectionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.subHeading {
+  font-size: var(--fs-s);
+  font-weight: 600;
+  color: var(--ink-2);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.senderRegistryBox {
+  padding: var(--sp-3);
+  border: 1px solid var(--line);
+  background-color: var(--paper);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.senderRegistryRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  font-size: var(--fs-s);
+}
+
+.senderRegistryLabel {
+  font-weight: 600;
+}
+
+.senderRegistryStatus {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+
+.senderRegistryLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.inlineBtn {
+  min-height: 32px;
+  padding: var(--sp-1) var(--sp-2);
+  background-color: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.noteBox {
+  padding: var(--sp-3);
+  border: 1px solid var(--line-strong);
+  background-color: var(--paper);
+  border-radius: var(--radius);
+  font-size: var(--fs-s);
+}
+
+.noteLabel {
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.primaryBtn {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-4);
+  background-color: var(--ink);
+  color: #ffffff;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondaryBtn {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-4);
+  background-color: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.linkBtn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-4);
+  background-color: var(--ink);
+  color: #ffffff;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.linkBtn:hover {
+  text-decoration: none;
+}
+
+.secondaryLinkBtn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-4);
+  background-color: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.secondaryLinkBtn:hover {
+  text-decoration: none;
+}
+
+:global([data-viewport='tablet']) .actions,
+:global([data-viewport='desktop']) .actions {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+:global([data-viewport='tablet']) .primaryBtn,
+:global([data-viewport='desktop']) .primaryBtn,
+:global([data-viewport='tablet']) .secondaryBtn,
+:global([data-viewport='desktop']) .secondaryBtn,
+:global([data-viewport='tablet']) .linkBtn,
+:global([data-viewport='desktop']) .linkBtn,
+:global([data-viewport='tablet']) .secondaryLinkBtn,
+:global([data-viewport='desktop']) .secondaryLinkBtn {
+  width: auto;
+}
+
+.disclaimer {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
+  border-top: 1px solid var(--line);
+  padding-top: var(--sp-3);
+}
+
+.savedBox {
+  padding: var(--sp-4);
+  background-color: var(--safe-bg);
+  border: 1px solid var(--safe);
+  border-radius: var(--radius);
+}
+
+.savedDesc {
+  margin: 0 0 var(--sp-3) 0;
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+}
+
+.errorBox {
+  padding: var(--sp-4);
+  background-color: var(--fake-bg);
+  border: 1px solid var(--fake);
+  border-radius: var(--radius);
+}
+
+.errorDetail {
+  margin: 0 0 var(--sp-3) 0;
+  font-family: var(--font-mono);
+  font-size: var(--fs-s);
+  color: var(--fake);
+}

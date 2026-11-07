@@ -1,0 +1,198 @@
+.header {
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: var(--sp-3) var(--sp-3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  min-width: 0;
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--ink);
+  min-height: 44px;
+  justify-content: center;
+}
+
+.logoWord {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.logoBar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: var(--accent);
+  margin-top: 3px;
+}
+
+.menuToggle {
+  min-height: 44px;
+  min-width: 44px;
+  padding: var(--sp-2) var(--sp-3);
+  background-color: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+  cursor: pointer;
+}
+
+.navContainer {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--line);
+}
+
+.navOpen {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 var(--sp-2);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+  border-left: 3px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.navLink:hover {
+  color: var(--ink);
+  background-color: var(--paper);
+  text-decoration: none;
+}
+
+.navLinkActive {
+  color: var(--ink);
+  border-left-color: var(--accent);
+  background-color: var(--paper);
+}
+
+.userArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--line);
+}
+
+.userEmail {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-2);
+}
+
+.logoutBtn {
+  min-height: 40px;
+  padding: var(--sp-1) var(--sp-3);
+  background-color: transparent;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-size: var(--fs-s);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.logoutBtn:hover {
+  background-color: var(--paper);
+}
+
+/* Планшет (640–919px) та Десктоп (>= 920px) */
+.header[data-header-vp='tablet'] .inner,
+.header[data-header-vp='desktop'] .inner {
+  padding: var(--sp-3) var(--sp-4);
+  gap: var(--sp-3);
+}
+
+.header[data-header-vp='tablet'] .menuToggle,
+.header[data-header-vp='desktop'] .menuToggle {
+  display: none;
+}
+
+.header[data-header-vp='tablet'] .navContainer,
+.header[data-header-vp='desktop'] .navContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--line);
+}
+
+.header[data-header-vp='tablet'] .nav,
+.header[data-header-vp='desktop'] .nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.header[data-header-vp='tablet'] .navLink,
+.header[data-header-vp='desktop'] .navLink {
+  border-left: none;
+  background-color: transparent;
+  padding: 0 var(--sp-1);
+}
+
+.header[data-header-vp='tablet'] .navLinkActive,
+.header[data-header-vp='desktop'] .navLinkActive {
+  border-left-color: transparent;
+  border-bottom-color: var(--accent);
+  background-color: transparent;
+}
+
+.header[data-header-vp='tablet'] .userArea,
+.header[data-header-vp='desktop'] .userArea {
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Десктоп (>= 920px): усе в один рядок */
+.header[data-header-vp='desktop'] .navContainer {
+  width: auto;
+  flex: 1;
+  justify-content: flex-end;
+  gap: var(--sp-4);
+  padding-top: 0;
+  border-top: none;
+}

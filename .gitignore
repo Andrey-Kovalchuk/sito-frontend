@@ -1,0 +1,29 @@
+# Залежності та збірка
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Середовище та системні файли
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+
+# Документація, чернетки та службові файли, не потрібні для запуску застосунку
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.gemini/
+.claude/
+.cursor/
+.agy/
+.vscode/
+.idea/
+docs/
+*.docx
+*.pdf
+*.mmd
+*.drawio
+*.py

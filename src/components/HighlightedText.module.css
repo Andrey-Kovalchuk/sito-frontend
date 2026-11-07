@@ -1,0 +1,20 @@
+.box {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink);
+  background-color: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.mark {
+  background-color: var(--suspicious-bg);
+  color: var(--ink);
+  padding: 1px 3px;
+  border-bottom: 2px solid var(--accent);
+  border-radius: var(--radius);
+}
