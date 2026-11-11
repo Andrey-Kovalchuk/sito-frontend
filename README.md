@@ -79,7 +79,17 @@ sito/
     ├── utils/                 # Валідація, санітизація, експорт CSV/JSON + тести
     ├── services/              # Заглушка API (mockApi.ts) і робота зі сховищем (storage.ts) + тести
     ├── state/                 # Ред'юсери та контексти (AuthContext, ChecksContext, SendersContext, analysisReducer) + тести
-    ├── components/            # Компоненти інтерфейсу (*.tsx, *.module.css, *.test.tsx)
-    ├── pages/                 # Сторінки 5 вкладок маршрутів (*.tsx, *.module.css, *.test.tsx)
+    ├── components/            # Перевикористовувані компоненти інтерфейсу:
+    │   ├── layout/            #   Каркас сайту, шапка, захист маршрутів (Layout, Header, ProtectedRoute, TestDataBadge)
+    │   ├── check/             #   Компоненти перевірки та оцінки (MessageForm, AnalysisPanel, RiskScale, SignalsList, Verdict*)
+    │   └── history/           #   Компоненти журналу (ChecksTable, FilterBar, ExportButtons, HighlightedText, ConfirmDialog)
+    ├── pages/                 # Сторінки маршрутів, згруповані за розділами:
+    │   ├── auth/              #   Сторінка входу (LoginPage)
+    │   ├── check/             #   Вкладка 1: Перевірка повідомлення (CheckPage)
+    │   ├── history/           #   Вкладка 2: Журнал перевірок і деталі запису (HistoryPage, CheckDetailsPage)
+    │   ├── overview/          #   Вкладка 3: Зведення та аналітика (OverviewPage)
+    │   ├── senders/           #   Вкладка 4: Реєстр відправників (SendersPage)
+    │   ├── rules/             #   Вкладка 5: Довідник правил і шаблони (RulesPage)
+    │   └── not-found/         #   Сторінка 404 (NotFoundPage)
     └── test/                  # Налаштування тестового середовища (setup.ts)
 ```

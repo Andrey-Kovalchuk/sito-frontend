@@ -2,12 +2,12 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
-import { AppRoutes } from '../App';
-import { TEST_ACCOUNT } from '../mocks/testData';
-import { SESSION_STORAGE_KEY } from '../services/storage';
-import { AuthProvider } from '../state/AuthContext';
-import { ChecksProvider } from '../state/ChecksContext';
-import { SendersProvider } from '../state/SendersContext';
+import { AppRoutes } from '../../App';
+import { TEST_ACCOUNT } from '../../mocks/testData';
+import { SESSION_STORAGE_KEY } from '../../services/storage';
+import { AuthProvider } from '../../state/AuthContext';
+import { ChecksProvider } from '../../state/ChecksContext';
+import { SendersProvider } from '../../state/SendersContext';
 
 function renderAt(entry: string) {
   // test data

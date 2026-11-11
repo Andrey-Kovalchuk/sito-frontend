@@ -1,4 +1,4 @@
-import type { Verdict } from '../types';
+import type { Verdict } from '../../types';
 import styles from './RiskScale.module.css';
 
 interface RiskScaleProps {

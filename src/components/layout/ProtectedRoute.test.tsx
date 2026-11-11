@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
-import { TEST_ACCOUNT } from '../mocks/testData';
-import { SESSION_STORAGE_KEY } from '../services/storage';
-import { AuthProvider } from '../state/AuthContext';
+import { TEST_ACCOUNT } from '../../mocks/testData';
+import { SESSION_STORAGE_KEY } from '../../services/storage';
+import { AuthProvider } from '../../state/AuthContext';
 import { ProtectedRoute } from './ProtectedRoute';
 
 function renderWithRouter(initialEntry = '/check') {

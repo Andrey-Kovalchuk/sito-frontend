@@ -1,10 +1,10 @@
 import { Link, useSearchParams } from 'react-router-dom';
-import { TestDataBadge } from '../components/TestDataBadge';
-import { VerdictLabel } from '../components/VerdictLabel';
-import { MESSAGE_TEMPLATES, MESSENGER_LABELS, RULES_CATALOG } from '../mocks/testData';
-import { useChecks } from '../state/ChecksContext';
-import type { SignalKind } from '../types';
-import { defangUrl, sanitizeText } from '../utils/sanitize';
+import { VerdictLabel } from '../../components/check/VerdictLabel';
+import { TestDataBadge } from '../../components/layout/TestDataBadge';
+import { MESSAGE_TEMPLATES, MESSENGER_LABELS, RULES_CATALOG } from '../../mocks/testData';
+import { useChecks } from '../../state/ChecksContext';
+import type { SignalKind } from '../../types';
+import { defangUrl, sanitizeText } from '../../utils/sanitize';
 import styles from './RulesPage.module.css';
 
 export function RulesPage() {

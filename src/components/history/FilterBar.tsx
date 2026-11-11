@@ -1,5 +1,5 @@
-import { MESSENGER_LABELS, SIGNAL_LABELS } from '../mocks/testData';
-import type { Messenger, SignalKind, Verdict } from '../types';
+import { MESSENGER_LABELS, SIGNAL_LABELS } from '../../mocks/testData';
+import type { Messenger, SignalKind, Verdict } from '../../types';
 import styles from './FilterBar.module.css';
 
 export type VerdictFilter = 'all' | Verdict;

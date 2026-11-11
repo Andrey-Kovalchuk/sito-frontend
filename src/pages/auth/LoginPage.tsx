@@ -1,9 +1,9 @@
 import { useState, type FormEvent } from 'react';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
-import { TestDataBadge } from '../components/TestDataBadge';
-import { TEST_ACCOUNT } from '../mocks/testData';
-import { useAuth } from '../state/AuthContext';
-import { validateLogin, type LoginErrors } from '../utils/validate';
+import { TestDataBadge } from '../../components/layout/TestDataBadge';
+import { TEST_ACCOUNT } from '../../mocks/testData';
+import { useAuth } from '../../state/AuthContext';
+import { validateLogin, type LoginErrors } from '../../utils/validate';
 import styles from './LoginPage.module.css';
 
 interface LocationState {

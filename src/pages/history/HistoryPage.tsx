@@ -1,15 +1,15 @@
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ChecksTable } from '../components/ChecksTable';
-import { ExportButtons } from '../components/ExportButtons';
+import { ChecksTable } from '../../components/history/ChecksTable';
+import { ExportButtons } from '../../components/history/ExportButtons';
 import {
   FilterBar,
   type FilterState,
   type MessengerFilter,
   type SignalFilter,
   type VerdictFilter,
-} from '../components/FilterBar';
-import { useChecks } from '../state/ChecksContext';
+} from '../../components/history/FilterBar';
+import { useChecks } from '../../state/ChecksContext';
 import styles from './HistoryPage.module.css';
 
 const ALLOWED_VERDICTS: VerdictFilter[] = ['all', 'fake', 'suspicious', 'safe'];

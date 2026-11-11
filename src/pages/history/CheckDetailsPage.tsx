@@ -1,16 +1,16 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { ConfirmDialog } from '../components/ConfirmDialog';
-import { HighlightedText } from '../components/HighlightedText';
-import { RiskScale } from '../components/RiskScale';
-import { SignalsList } from '../components/SignalsList';
-import { TestDataBadge } from '../components/TestDataBadge';
-import { VerdictEditor } from '../components/VerdictEditor';
-import { VerdictLabel } from '../components/VerdictLabel';
-import { MESSENGER_LABELS, SENDER_CATEGORY_LABELS, SIGNAL_LABELS } from '../mocks/testData';
-import { useChecks } from '../state/ChecksContext';
-import { useSenders } from '../state/SendersContext';
-import type { Verdict } from '../types';
+import { RiskScale } from '../../components/check/RiskScale';
+import { SignalsList } from '../../components/check/SignalsList';
+import { VerdictEditor } from '../../components/check/VerdictEditor';
+import { VerdictLabel } from '../../components/check/VerdictLabel';
+import { ConfirmDialog } from '../../components/history/ConfirmDialog';
+import { HighlightedText } from '../../components/history/HighlightedText';
+import { TestDataBadge } from '../../components/layout/TestDataBadge';
+import { MESSENGER_LABELS, SENDER_CATEGORY_LABELS, SIGNAL_LABELS } from '../../mocks/testData';
+import { useChecks } from '../../state/ChecksContext';
+import { useSenders } from '../../state/SendersContext';
+import type { Verdict } from '../../types';
 import styles from './CheckDetailsPage.module.css';
 
 export function CheckDetailsPage() {

@@ -1,4 +1,4 @@
-import { defangUrl, sanitizeText } from '../utils/sanitize';
+import { defangUrl, sanitizeText } from '../../utils/sanitize';
 import styles from './HighlightedText.module.css';
 
 interface HighlightedTextProps {

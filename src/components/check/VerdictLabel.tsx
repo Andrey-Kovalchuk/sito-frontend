@@ -1,5 +1,5 @@
-import { VERDICT_LABELS } from '../mocks/testData';
-import type { Verdict } from '../types';
+import { VERDICT_LABELS } from '../../mocks/testData';
+import type { Verdict } from '../../types';
 import styles from './VerdictLabel.module.css';
 
 interface VerdictLabelProps {

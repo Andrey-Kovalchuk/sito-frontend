@@ -2,7 +2,7 @@ import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
-import { AuthProvider } from '../state/AuthContext';
+import { AuthProvider } from '../../state/AuthContext';
 import { LoginPage } from './LoginPage';
 
 function renderLogin() {

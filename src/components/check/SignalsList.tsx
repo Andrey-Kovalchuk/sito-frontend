@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import type { Signal } from '../types';
-import { defangUrl } from '../utils/sanitize';
+import type { Signal } from '../../types';
+import { defangUrl } from '../../utils/sanitize';
 import styles from './SignalsList.module.css';
 
 interface SignalsListProps {

@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { AnalysisPanel } from '../components/AnalysisPanel';
-import { MessageForm } from '../components/MessageForm';
-import { MESSAGE_TEMPLATES } from '../mocks/testData';
-import { analyzeMessage } from '../services/mockApi';
-import { analysisReducer, initialAnalysisState } from '../state/analysisReducer';
-import { useChecks } from '../state/ChecksContext';
-import type { CheckRecord, MessageInput, Messenger } from '../types';
-import { validateMessage } from '../utils/validate';
+import { AnalysisPanel } from '../../components/check/AnalysisPanel';
+import { MessageForm } from '../../components/check/MessageForm';
+import { MESSAGE_TEMPLATES } from '../../mocks/testData';
+import { analyzeMessage } from '../../services/mockApi';
+import { analysisReducer, initialAnalysisState } from '../../state/analysisReducer';
+import { useChecks } from '../../state/ChecksContext';
+import type { CheckRecord, MessageInput, Messenger } from '../../types';
+import { validateMessage } from '../../utils/validate';
 import styles from './CheckPage.module.css';
 
 const ALLOWED_MESSENGERS: Messenger[] = [

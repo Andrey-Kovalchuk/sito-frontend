@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import { MESSENGER_LABELS, SENDER_CATEGORY_LABELS } from '../mocks/testData';
-import { useSenders } from '../state/SendersContext';
-import type { CheckRecord } from '../types';
-import { defangUrl, sanitizeText } from '../utils/sanitize';
-import { VerdictLabel } from './VerdictLabel';
+import { MESSENGER_LABELS, SENDER_CATEGORY_LABELS } from '../../mocks/testData';
+import { useSenders } from '../../state/SendersContext';
+import type { CheckRecord } from '../../types';
+import { defangUrl, sanitizeText } from '../../utils/sanitize';
+import { VerdictLabel } from '../check/VerdictLabel';
 import styles from './ChecksTable.module.css';
 
 interface ChecksTableProps {

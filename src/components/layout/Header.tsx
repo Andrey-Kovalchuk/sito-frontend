@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useAuth } from '../state/AuthContext';
+import { useAuth } from '../../state/AuthContext';
 import { TestDataBadge } from './TestDataBadge';
 import styles from './Header.module.css';
 

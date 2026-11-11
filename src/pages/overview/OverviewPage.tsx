@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { TestDataBadge } from '../components/TestDataBadge';
-import { MESSENGER_LABELS, RULES_CATALOG, SENDER_CATEGORY_LABELS } from '../mocks/testData';
-import { useChecks } from '../state/ChecksContext';
-import { useSenders } from '../state/SendersContext';
-import type { Messenger } from '../types';
+import { TestDataBadge } from '../../components/layout/TestDataBadge';
+import { MESSENGER_LABELS, RULES_CATALOG, SENDER_CATEGORY_LABELS } from '../../mocks/testData';
+import { useChecks } from '../../state/ChecksContext';
+import { useSenders } from '../../state/SendersContext';
+import type { Messenger } from '../../types';
 import styles from './OverviewPage.module.css';
 
 const MESSENGER_KEYS: Messenger[] = ['telegram', 'viber', 'whatsapp', 'signal', 'sms', 'other'];

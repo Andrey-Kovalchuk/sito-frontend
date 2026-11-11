@@ -1,8 +1,8 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { Link } from 'react-router-dom';
-import { MESSENGER_LABELS, SENDER_CATEGORY_LABELS } from '../mocks/testData';
-import { useSenders } from '../state/SendersContext';
-import type { FieldErrors, MessageInput, Messenger } from '../types';
+import { MESSENGER_LABELS, SENDER_CATEGORY_LABELS } from '../../mocks/testData';
+import { useSenders } from '../../state/SendersContext';
+import type { FieldErrors, MessageInput, Messenger } from '../../types';
 import styles from './MessageForm.module.css';
 
 interface MessageFormProps {

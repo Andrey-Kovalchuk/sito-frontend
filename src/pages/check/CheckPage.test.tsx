@@ -2,11 +2,11 @@ import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
-import { SEED_CHECKS } from '../mocks/testData';
-import { AuthProvider } from '../state/AuthContext';
-import { ChecksProvider } from '../state/ChecksContext';
-import { SendersProvider } from '../state/SendersContext';
-import { CheckDetailsPage } from './CheckDetailsPage';
+import { SEED_CHECKS } from '../../mocks/testData';
+import { AuthProvider } from '../../state/AuthContext';
+import { ChecksProvider } from '../../state/ChecksContext';
+import { SendersProvider } from '../../state/SendersContext';
+import { CheckDetailsPage } from '../history/CheckDetailsPage';
 import { CheckPage } from './CheckPage';
 
 function renderCheckFlow(initialEntry = '/check') {

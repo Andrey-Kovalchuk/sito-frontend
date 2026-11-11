@@ -1,10 +1,10 @@
 import { useMemo, useState, type FormEvent } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { TestDataBadge } from '../components/TestDataBadge';
-import { MESSENGER_LABELS, SENDER_CATEGORY_LABELS } from '../mocks/testData';
-import { useChecks } from '../state/ChecksContext';
-import { useSenders } from '../state/SendersContext';
-import type { Messenger, SenderCategory } from '../types';
+import { TestDataBadge } from '../../components/layout/TestDataBadge';
+import { MESSENGER_LABELS, SENDER_CATEGORY_LABELS } from '../../mocks/testData';
+import { useChecks } from '../../state/ChecksContext';
+import { useSenders } from '../../state/SendersContext';
+import type { Messenger, SenderCategory } from '../../types';
 import styles from './SendersPage.module.css';
 
 type CategoryFilter = 'all' | SenderCategory;

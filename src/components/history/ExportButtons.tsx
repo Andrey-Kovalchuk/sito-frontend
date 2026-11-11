@@ -1,5 +1,5 @@
-import type { CheckRecord } from '../types';
-import { downloadFile, toCsv, toJson } from '../utils/exportFile';
+import type { CheckRecord } from '../../types';
+import { downloadFile, toCsv, toJson } from '../../utils/exportFile';
 import styles from './ExportButtons.module.css';
 
 interface ExportButtonsProps {

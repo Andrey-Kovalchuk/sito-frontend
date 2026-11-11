@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react';
-import { VERDICT_LABELS } from '../mocks/testData';
-import type { Verdict } from '../types';
+import { VERDICT_LABELS } from '../../mocks/testData';
+import type { Verdict } from '../../types';
 import styles from './VerdictEditor.module.css';
 
 interface VerdictEditorProps {
